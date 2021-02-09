@@ -26,7 +26,7 @@ def get_rqa_coding_plans(pipeline_name):
         CodingPlan(raw_field="rqa_s01e01_raw",
                    time_field="sent_on",
                    run_id_field="rqa_s01e01_run_id",
-                   coda_filename="Test_Daniel_pipeline_s01e01.json",
+                   coda_filename="Test-Pipeline-Daniel_s01e01.json",
                    icr_filename="s01e01.csv",
                    coding_configurations=[
                        CodingConfiguration(
@@ -46,7 +46,7 @@ def get_demog_coding_plans(pipeline_name):
     return [
         CodingPlan(raw_field="gender_raw",
                    time_field="gender_time",
-                   coda_filename="Test_Daniel_pipeline_gender.json",
+                   coda_filename="Test-Pipeline-Daniel_gender.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -62,7 +62,7 @@ def get_demog_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="age_raw",
                    time_field="age_time",
-                   coda_filename="Test_Daniel_pipeline_age.json",
+                   coda_filename="Test-Pipeline-Daniel_age.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -87,7 +87,7 @@ def get_demog_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="location_raw",
                    time_field="location_time",
-                   coda_filename="Test_Daniel_pipeline_location.json",
+                   coda_filename="Test-Pipeline-Daniel_location.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
