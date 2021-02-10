@@ -103,7 +103,7 @@ if __name__ == "__main__":
         log.info("Applying Manual Codes from Coda...")
         data = ApplyManualCodes.apply_manual_codes(user, data, prev_coded_dir_path)
 
-        log.info("Generating Analysis CSVs...")
+        log.info("Generating CSVs for Analysis...")
         messages_data, individuals_data = AnalysisFile.generate(user, data, csv_by_message_output_path,
                                                                 csv_by_individual_output_path)
 

@@ -1,0 +1,56 @@
+{
+  "PipelineName": "Test-Pipeline-Daniel",
+  "RawDataSources": [
+    {
+      "SourceType": "RapidPro",
+      "Domain": "textit.in",
+      "TokenFileURL": "gs://avf-credentials/experimental-test-textit-token.txt",
+      "ContactsFileName": "experimental_test_contacts",
+      "ActivationFlowNames": [
+        "test_pipeline_daniel_activation"
+      ],
+      "SurveyFlowNames": [
+        "test_pipeline_daniel_demog"
+      ],
+      "TestContactUUIDs": [
+        "a9a920cd-0f3b-4fa1-af6a-0cba0f64eeaf"
+      ]
+    }
+  ],
+  "PhoneNumberUuidTable": {
+    "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
+    "TableName": "Test-Pipeline-Daniel-phone-number-avf-phone-id"
+  },
+  "RapidProKeyRemappings": [
+    {"RapidProKey": "avf_phone_id", "PipelineKey": "uid"},
+    
+    {"RapidProKey": "Rqa_S01E01 (Text) - test_pipeline_daniel_activation", "PipelineKey": "rqa_s01e01_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E01 (Run ID) - test_pipeline_daniel_activation", "PipelineKey": "rqa_s01e01_run_id"},
+    {"RapidProKey": "Rqa_S01E01 (Time) - test_pipeline_daniel_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Constituency (Text) - test_pipeline_daniel_demog", "PipelineKey": "location_raw"},
+    {"RapidProKey": "Constituency (Time) - test_pipeline_daniel_demog", "PipelineKey": "location_time"},
+    {"RapidProKey": "Gender (Text) - test_pipeline_daniel_demog", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Gender (Time) - test_pipeline_daniel_demog", "PipelineKey": "gender_time"},
+    {"RapidProKey": "Age (Text) - test_pipeline_daniel_demog", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Age (Time) - test_pipeline_daniel_demog", "PipelineKey": "age_time"}
+  ],
+  "ProjectStartDate": "2000-01-01T10:30:00+03:00",
+  "ProjectEndDate": "2100-01-01T00:00:00+03:00",
+  "FilterTestMessages": false,
+  "MoveWSMessages": true,
+  "AutomatedAnalysis": {
+    "GenerateCountyThemeDistributionMaps": true,
+    "GenerateConstituencyThemeDistributionMaps": true
+  },
+  "DriveUpload": {
+    "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+    "ProductionUploadPath": "Test_Pipeline_Daniel_outputs/production.csv",
+    "MessagesUploadPath": "Test_Pipeline_Daniel_outputs/messages.csv",
+    "IndividualsUploadPath": "Test_Pipeline_Daniel_outputs/individuals.csv",
+    "AutomatedAnalysisDir": "Test_Pipeline_Daniel_outputs/automated_analysis"
+  },
+  "MemoryProfileUploadBucket": "gs://avf-pipeline-logs-performance-nearline",
+  "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
+  "BucketDirPath": "2021/Test_Pipeline_Daniel"
+}
