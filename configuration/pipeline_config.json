@@ -4,7 +4,7 @@
     {
       "SourceType": "RapidPro",
       "Domain": "textit.in",
-      "TokenFileURL": "gs://avf-credentials/experimental-test-textit-token.txt",
+      "TokenFileURL": "gs://avf-credentials/experimental-test-text-it-token.txt",
       "ContactsFileName": "experimental_test_contacts",
       "ActivationFlowNames": [
         "test_pipeline_daniel_activation"
