@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-3ab3d636",
+      "CodeType": "Normal",
+      "DisplayText": "early pregnancies",
+      "NumericValue": 1,
+      "StringValue": "early_pregnancies",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-330b17c4",
+      "CodeType": "Normal",
+      "DisplayText": "early or forced marriages",
+      "NumericValue": 2,
+      "StringValue": "early_or_forced_marriages",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cba7bba1",
+      "CodeType": "Normal",
+      "DisplayText": "fear of covid 19",
+      "NumericValue": 3,
+      "StringValue": "fear_of_covid_19",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f0bc24ab",
+      "CodeType": "Normal",
+      "DisplayText": "lack of fees",
+      "NumericValue": 4,
+      "StringValue": "lack_of_fees",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4614fefd",
+      "CodeType": "Normal",
+      "DisplayText": "encourage and support",
+      "NumericValue": 5,
+      "StringValue": "encourage_and_support",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3c26e6a5",
+      "CodeType": "Normal",
+      "DisplayText": "domestic chores burden",
+      "NumericValue": 6,
+      "StringValue": "domestic_chores_burden",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4a5acf6c",
+      "CodeType": "Normal",
+      "DisplayText": "other theme",
+      "NumericValue": 7,
+      "StringValue": "other_theme",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-E-720cdb66",
       "CodeType": "Meta",
       "MetaCode": "escalate",
